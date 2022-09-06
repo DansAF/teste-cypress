@@ -1,0 +1,24 @@
+{
+  "name": "teste-cypress",
+  "version": "1.0.0",
+  "description": "TBD.",
+  "main": "index.js",
+  "scripts": {
+    "start": "my-server -p 3030",
+    "cy:run": "cypress run --record --key 66b8fb43-32da-48c7-8436-5e9f5f419a54",
+    "test": "start-server-and-test start http://localhost:3030 cy:run",
+    "test2": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix ": "eslint cypress/**/*.js --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "eslint-plugin-vue": "^9.4.0",
+    "start-server-and-test": "^1.14.0"
+  }
+}
